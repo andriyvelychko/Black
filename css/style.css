@@ -1,4 +1,6 @@
-
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*/
 /*////////////////////////////////////////*/
  .wrapper {
 	max-width: 1210px;
@@ -219,7 +221,7 @@ header {
 .banner {
 	overflow: hidden;
 	text-align: center;
-	background: url("../img/banner.png") no-repeat center top;
+	background: url("../img/banner.webp") no-repeat center top;
 	background-size: cover;
 	max-height: 100vh;
     padding: 16% 0 20%;
@@ -286,7 +288,7 @@ header {
 	opacity: 0.5;
 	z-index: 998;
 	color: white;
-	background:url("../img/naverh.png") no-repeat center center;
+	background:url("../img/naverh.webp") no-repeat center center;
 	background-size: cover;
 	-webkit-transition: all 0.2s;
 	-webkit-transition: all 0.3s;

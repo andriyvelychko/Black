@@ -1,9 +1,17 @@
 $(function(){
-
-	$('.menu-toggle').click(function(){
-		$(this).toggleClass('active')
-		$('.menu').slideToggle(400)
-	})
+//--------------------------------------------------
+//Customizing the landing page menu
+	$('.menu__link').click(function(){
+    $('#perspective').removeClass('effect-moveleft')
+    $('#perspective').removeClass('modalview')
+    $('#perspective').removeClass('animate')
+    /*var height = $(window).height();
+    $(window).scrollTop(height);*///Еhis script skips the first screen
+  })
+  $('.menu-toggle').click(function(){
+    $('#perspective').addClass('effect-moveleft')
+    $('#perspective').addClass('modalview')
+  })
 //--------------------------------------------------
 //LOADER
   $(window).on('load', function () {

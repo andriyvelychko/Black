@@ -148,120 +148,124 @@ p {
 	margin: -16px 0 0 -16px;
 }
 /*--------------------HEADER------------------*/
+.perspective.modalview {
+    z-index: 2;
+}
+.effect-moveleft .outer-nav a {
+
+}
 header {
-	position: absolute;
-	top: 40px;
-	left: 0;
-	right: 0;
-	z-index: 99;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 99;
 }
-
 .header-wrap {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.menu-toggle {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 27px;
+    
 }
 
-.menu-toggle {
-	display: inline-block;
-	border: none;
-	background-color: transparent;
-	padding: 0;
-	width: 27px;
-}
-	.navigation {
-	position: relative;
-	border: 1px solid white;
-	padding: 13px 10px 10px;
-}
-	.menu {
-	display: none;
-	position: absolute;
-	top: 100%;
-	margin-top: 20px;
-	right: 0;
-	min-width: 200px;
-	padding: 10px 0;
-	background: rgba(0,0,0,0.7);
-}
+    .navigation {
+        border: 1px solid white;
+        padding: 13px 10px 10px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
 .menu__item {
-	margin-left: 0;
-	position: static;
+    margin-left: 0;
+    position: static;
 }
 
 .menu__link {
-	display: block;
-	padding: 10px 20px;
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 20px;
-	text-transform: uppercase;
-	color: #ffffff;
-	transition: all 0.2s;
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff!important;
+    transition: all 0.2s;
 }
 
 .menu__link:hover {
-	background-color: rgb(48,48,48);
+    background-color: rgb(48,48,48);
 }
 .menu-toggle span {
-	display: block;
-	height: 4px;
-	background: #fff;
+    display: block;
+    height: 4px;
+    background: #ffffff;
 }
-.menu-toggle span + span {margin-top: 5px}
+.menu-toggle span + span {margin-top: 5px;}
+/*Menu active*/
+.effect-moveleft {
+    background: #121212;
+}
 /*-----------------BANNER-----------------*/
 .banner {
-	overflow: hidden;
-	text-align: center;
-	background: url("../img/banner.webp") no-repeat center top;
-	background-size: cover;
-	max-height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background: url("../img/banner.webp") no-repeat center top;
+    background-size: cover;
+    max-height: 100vh;
     padding: 16% 0 20%;
 }
 
 .mouse {
-	display: block;
-	position: relative;
-	left: 50%;
+    display: block;
+    position: relative;
+    left: 50%;
     transform: translateX(-50%);
-	width: 30px;
-	height: 50px;
-	border: 2px solid white;
-	border-radius: 60px;
-	margin-top: 70px;
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 60px;
+    margin-top: 70px;
 }
 .mouse::after {
-	content:"";
-	width: 6px;
-	height: 9px;
-	position: absolute;
-	top: 9px;
-	background: white;
-	left: 50%;
-	transform: translateX(-50%);
-	border-radius: 50%;
-	-webkit-animation: mouse 2s infinite;
-	        animation: mouse 2s infinite;
+    content:"";
+    width: 6px;
+    height: 9px;
+    position: absolute;
+    top: 9px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    -webkit-animation: mouse 2s infinite;
+            animation: mouse 2s infinite;
 }
 @-webkit-keyframes mouse {
-	0% {
-		opacity: 1;
-		top: 9px;
-	}
-	100% {
-		opacity: 0;
-		top: 31px;
-	}
+    0% {
+        opacity: 1;
+        top: 9px;
+    }
+    100% {
+        opacity: 0;
+        top: 31px;
+    }
 }
 @keyframes mouse {
-	0% {
-		opacity: 1;
-		top: 9px;
-	}
-	100% {
-		opacity: 0;
-		top: 31px;
-	}
+    0% {
+        opacity: 1;
+        top: 9px;
+    }
+    100% {
+        opacity: 0;
+        top: 31px;
+    }
 }
 /*-----------------ВОЗВРАТ К ВЕРХУ----------------------*/
 #toTop {
